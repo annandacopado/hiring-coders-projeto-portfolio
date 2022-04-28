@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #C3C3C3;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+ul{
+  list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: url(../img/BG.png) no-repeat center center fixed;
+    background-size: cover;
+}
+header{
+    padding-top: 16px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: space-around;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    padding: 8px;
+    color: #1F2148 !important;
+}
+header ul li a{
+    color: #1F2148 !important;
+}
+.container .name h1{
+    font-size:64 px;
+}
+.container .name h5{
+    font-size:24 px;
+}
+.container{
+    text-align: center;
+}
+#arrow{
+    font-size: 36px;
+    cursor: pointer;
+    animation: blink 1s steps(5,start) infinite;
+}
+#animation{
+    transition: 300ms;
+}
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.active{
+    display: block !important;
+}
+#about p{
+    max-width: 680px;
+    margin:0 auto;
+}
+.form{
+    width: 40%;
+    margin:0 auto;
+    margin-top: 40px;
+}
+.form input {
+    width: 50%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px 0px   0px  8px;
+
+}
+.form .deixe p{
+    margin-bottom: 36px;
+}
+.form button {
+    width: 15%;
+    padding: 8px 16px;
+    background-color: #1F2148 ;
+    color: C3C3C3;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius:  0px  8px 8px 0px ;
+    margin-left: -5px;
+}
+.form button:hover {
+    background-color: #5386e4;
+    color: #C3C3C3;
+}
+
+@media only screen and (max-width:480px){
+    .container .name h1{
+        font-size:36 px;
+    }
+    .container .name h5{
+        font-size:18 px;
+    }
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .form{
+        width: 100%;
+    }
+}
